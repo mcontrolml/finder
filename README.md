@@ -1,5 +1,6 @@
 # MissionControl Finder
-[<img src="https://mcontrol.ml/banner.png" width="550px"></img>](https://finder.mcontrol.ml/)
+[<img src="https://mcontrol.ml/banner.png" width="500px"></img>](https://finder.mcontrol.ml/)
+
 An open-source explorer built for Terra 2.0
 
 # How to contribute
