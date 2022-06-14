@@ -1,0 +1,175 @@
+.address__text {
+  font-size: small;
+}
+
+.coin {
+  margin: 1rem 0;
+}
+
+.coin__balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0rem 0;
+}
+
+.delegation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: .8rem 0;
+}
+
+.coin__balance__details {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.coin__balance__details img {
+  width: 25px;
+  margin-right: 0.5rem;
+}
+.coin__balance__name {
+  display: block;
+  font-weight: 600;
+  line-height: 12pt;
+}
+
+.coin__balance__denom {
+  font-size: small;
+  line-height: 10pt;
+  display: block;
+  margin: .3rem 0;
+}
+
+.validator__img {
+  border-radius: 50%;
+}
+
+.release__time {
+  font-size: small;
+  margin: 0;
+}
+
+.address__buttons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.delegation__name {
+  display: block;
+  font-weight: 600;
+  line-height: 12pt;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.delegation__error {
+  color: var(--error);
+  font-size: small;
+  margin-left: .6rem;
+}
+
+.delegation__success {
+  color: var(--success);
+  font-size: small;
+  margin-left: .6rem;
+}
+
+.txhistory__error {
+  font-size: larger;
+  color: var(--error);
+  margin: 0;
+}
+
+.txhistory__success {
+  font-size: larger;
+  color: var(--success);
+  margin: 0;
+}
+
+.txhistory__messages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.txhistory__messages span {
+  font-size: small;
+  font-weight: 600;
+  color: var(--main);
+  background-color: var(--main-op);
+  padding: .2rem .8rem;
+  margin: .1rem 0;
+  border-radius: 1rem;
+}
+
+.txhistory__time {
+  font-size: small;
+}
+
+.txhistory__load {
+  border: 0;
+  cursor: pointer;
+  background-color: var(--main);
+  color: var(--bg);
+  display: block;
+  margin: .6rem auto;
+  font-weight: 500;
+  font-size: medium;
+  padding: .2rem 1rem;
+  border-radius: .6rem;
+  transition: .3s;
+}
+
+.txhistory__load:hover {
+  background-color: var(--main-op);
+  color: var(--main);
+}
+
+.txhistory__tx {
+  border-bottom: 1px solid var(--main-op);
+}
+
+.txhistory__tx td {
+  padding: .4rem 0;
+}
+
+.contract__name {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: .6rem 0;
+}
+
+.contract__name img {
+  width: 35px;
+  border-radius: 50%;
+  margin-right: .4rem;
+}
+
+.contract__details {
+  padding-bottom: 1rem;
+}
+
+.contract__details table {
+  font-size: small;
+}
+
+.contract__details .field__title {
+  font-weight: 600;
+}
+
+.coin__balance__vesting {
+  text-align: center;
+  margin: 0;
+  font-size: small;
+  opacity: .9;
+}

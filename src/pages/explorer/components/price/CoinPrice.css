@@ -1,0 +1,32 @@
+.coin__price {
+  background-color: var(--bg);
+  width: 20%;
+  padding: 1.2rem 1rem;
+  border-radius: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.coin__price img {
+  width: 24px;
+}
+
+.coin__price h3 {
+  margin: 0;
+}
+
+.coin__price p {
+  margin: 0;
+  font-size: large;
+}
+
+.coin__price .price__change {
+  font-size: small;
+}
+
+.coin__price .up {
+  color: var(--success);
+}
+
+.coin__price .down {
+  color: var(--error);
+}

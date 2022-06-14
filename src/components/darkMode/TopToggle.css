@@ -1,0 +1,50 @@
+.top__toggle {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.darkmode__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20pt;
+  color: var(--gray);
+  transition: 0.3s;
+}
+
+.darkmode__toggle:hover {
+  background-color: var(--main-op);
+}
+
+.network__toggle {
+  border: 0;
+  color: var(--main);
+  background-color: var(--main-op);
+  padding: .4rem 1rem;
+  border-radius: .4rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 659px) {
+  .top__toggle {
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+  }
+  .darkmode__toggle {
+    padding: 0.5rem;
+    font-size: 18pt;
+  }
+}

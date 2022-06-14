@@ -1,0 +1,69 @@
+table {
+    width: 100%;
+}
+
+thead {
+    font-weight: 600;
+    color: var(--text) !important;
+}
+
+.flag__column {
+    font-size: 20pt;
+    line-height: 24pt;
+    padding-right: .6rem;
+}
+
+.number__column {
+    text-align: center;
+    color: var(--main);
+}
+
+.download__button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: var(--main);
+    color: var(--bg2);
+    width: fit-content;
+    padding: .5rem 1.2rem;
+    margin: 1rem auto;
+    border-radius: .6rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.download__button i {
+    font-size: larger;
+    padding-right: .5rem;
+}
+
+.download__button:hover {
+    background-color: #110042;
+}
+
+.warning {
+    color: var(--main);
+    border: 1px solid var(--main);
+    background-color: var(--main-op);
+    border-radius: .6rem;
+    padding: 1rem;
+    margin-bottom: .6rem;
+    margin-top: -2rem;
+}
+
+.warning h4 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.warning h4 i {
+    padding-right: .3rem;
+    font-size: large;
+}
+
+.warning p {
+    font-size: 11pt;
+    margin: 0;
+    margin-top: .4rem;
+}

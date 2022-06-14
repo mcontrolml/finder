@@ -1,0 +1,16 @@
+.error p {
+  text-align: center;
+  color: var(--gray);
+  font-weight: 600;
+  margin-top: 0.4rem;
+  margin-bottom: 2rem;
+}
+
+.error i {
+  display: block;
+  color: var(--gray);
+  font-size: 42px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 2.8rem;
+}

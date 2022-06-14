@@ -1,0 +1,26 @@
+.loading p {
+    text-align: center;
+    color: var(--gray);
+    font-weight: 600;
+    margin-top: .4rem;
+    margin-bottom: 2rem;
+}
+
+.loading i {
+    display: block;
+    color: var(--gray);
+    font-size: 42px;
+    animation: rotation 1.6s infinite linear;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 2.8rem;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-359deg);
+    }
+  }

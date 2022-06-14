@@ -1,0 +1,44 @@
+.endpoint__container {
+    padding: .8rem 0;
+}
+
+.endpoint__container p {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.endpoint {
+    display: flex;
+    align-items: center;
+    margin-bottom: .6rem;
+}
+
+.endpoint__url {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg);
+    width: fit-content;
+    border-radius: .4rem;
+    margin-left: 1rem;
+}
+
+.endpoint__url span {
+    padding: .2rem .6rem;
+    color: var(--gray);
+    font-weight: 600;
+}
+
+.endpoint__url button {
+    background-color: var(--bg);
+    color: var(--gray);
+    padding: .2rem .6rem;
+    border: 0;
+    font-size: large;
+    cursor: pointer;
+    border-radius: .4rem;
+    transition: .2s;
+}
+
+.endpoint__url button:hover {
+    color: var(--text);
+}
