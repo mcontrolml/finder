@@ -31,8 +31,8 @@
   border: 0;
   color: var(--main);
   background-color: var(--main-op);
-  padding: .4rem 1rem;
-  border-radius: .4rem;
+  padding: 0.4rem 1rem;
+  border-radius: 0.4rem;
   cursor: pointer;
   font-weight: 600;
 }

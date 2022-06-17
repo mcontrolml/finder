@@ -32,16 +32,19 @@ export default function TxMsg(msg: any) {
   const msgName = msgType[msgType.length - 1] || msg['@type']
   return (
     <div className='msg'>
-      {
-        isIbcTransfer(msg) && (isAxelarTransfer(msg) ? <AxelarInfo {...msg} /> : <IbcInfo {...msg}/>)
-      }
+      {isIbcTransfer(msg) &&
+        (isAxelarTransfer(msg) ? (
+          <AxelarInfo {...msg} />
+        ) : (
+          <IbcInfo {...msg} />
+        ))}
       <h5>{msgName}</h5>
       <table>
         <tbody>
           {Object.keys(msg).map((key) => {
             const val = msg[key]
 
-            if(!val) return <></>
+            if (!val) return <></>
 
             // execute msg, will be putted outside of the table
             if (

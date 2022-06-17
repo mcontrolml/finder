@@ -4,7 +4,12 @@ import STATE from '../../../state'
 import { timeToRelative } from '../../../util/time'
 import { FcdTxInterface } from '../../../types/tx'
 
-export default function TxElement({ code, txhash, tx, timestamp }: FcdTxInterface) {
+export default function TxElement({
+  code,
+  txhash,
+  tx,
+  timestamp,
+}: FcdTxInterface) {
   const network = useRecoilValue(STATE.network)
 
   const msgs: string[] = (tx as any).body.messages.map((msg: any) => {
@@ -14,7 +19,6 @@ export default function TxElement({ code, txhash, tx, timestamp }: FcdTxInterfac
 
   return (
     <tr className='txhistory__tx'>
-
       <td>
         {code ? (
           <span className='txhistory__error'>
@@ -31,11 +35,11 @@ export default function TxElement({ code, txhash, tx, timestamp }: FcdTxInterfac
           <span key={i}>{msg}</span>
         ))}
       </td>
-      <td className='txhistory__time'>
-        {timeToRelative(new Date(timestamp))}
-      </td>
+      <td className='txhistory__time'>{timeToRelative(new Date(timestamp))}</td>
       <td>
-        <Link to={`/${network}/tx/${txhash}`}><i className='bx bx-link-external' ></i></Link>
+        <Link to={`/${network}/tx/${txhash}`}>
+          <i className='bx bx-link-external'></i>
+        </Link>
       </td>
     </tr>
   )

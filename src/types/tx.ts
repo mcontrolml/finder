@@ -21,7 +21,7 @@ export interface TxInterface {
         {
           mode_info: SingleSignInterface | MultiSignInterface
           sequence: string
-        }
+        },
       ]
       fee: {
         amount: {

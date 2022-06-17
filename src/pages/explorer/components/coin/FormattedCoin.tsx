@@ -6,7 +6,7 @@ export default function FormattedCoin({
   amount,
   denom,
   rounded,
-  style
+  style,
 }: {
   amount: string
   denom: string

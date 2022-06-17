@@ -11,7 +11,7 @@
 
 .content h1 {
   margin: 0;
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
   font-weight: 700;
 }
 
@@ -24,8 +24,8 @@
   font-weight: 500;
   color: var(--gray);
   margin-right: 1.2rem;
-  padding: .4rem 1rem;
-  border-radius: .6rem;
+  padding: 0.4rem 1rem;
+  border-radius: 0.6rem;
 }
 
 .slink__active {
@@ -35,21 +35,21 @@
 
 .content__box {
   background-color: var(--bg2);
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   width: 100%;
   margin-top: 1.4rem;
-  padding: .4rem 1rem;
+  padding: 0.4rem 1rem;
 }
 
 .content__box h3 {
-  margin: .4rem 0;
+  margin: 0.4rem 0;
 }
 
 .updatedAt {
   font-size: small;
   font-weight: 500;
   color: var(--gray);
-  margin-left: .4rem;
+  margin-left: 0.4rem;
 }
 
 .logo__mobile {
@@ -58,7 +58,7 @@
 
 .banner {
   width: calc(100% + 2rem);
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   margin-top: 1.4rem;
 }
 
@@ -75,7 +75,7 @@
   font-size: 24pt;
 }
 .comingsoon p {
-  margin: .2rem;
+  margin: 0.2rem;
   font-weight: 600;
 }
 

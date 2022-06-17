@@ -57,13 +57,13 @@ export default function AxelarInfo(msg: any) {
             </tr>
             <tr>
               <td className='tx__field'>to</td>
-              <td style={{ wordBreak: 'break-all' }}>{isMsgTransfer ? data.to : 'tbd'}</td>
+              <td style={{ wordBreak: 'break-all' }}>
+                {isMsgTransfer ? data.to : 'tbd'}
+              </td>
             </tr>
             <tr>
               <td className='tx__field'>chain</td>
-              <td>
-                {data.chain}
-              </td>
+              <td>{data.chain}</td>
             </tr>
             <tr>
               <td className='tx__field'>amount</td>

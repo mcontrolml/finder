@@ -25,7 +25,9 @@ export default function Delegation({
             className='delegation__name'
           >
             {moniker}{' '}
-            <span className={jailed ? 'delegation__error' : 'delegation__success'}>
+            <span
+              className={jailed ? 'delegation__error' : 'delegation__success'}
+            >
               {jailed ? 'Jailed' : 'Active'}
             </span>
           </Link>

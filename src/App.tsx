@@ -16,7 +16,7 @@ import Validator from './pages/explorer/validator/Validator'
 
 function App() {
   const darkMode = useRecoilValue(STATE.darkMode)
-  
+
   return (
     <div className={darkMode ? 'app dark' : 'app light'}>
       <TopToggle />

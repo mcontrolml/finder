@@ -8,7 +8,7 @@ async function queryCW20(
   chunk: string[],
   network: 'mainnet' | 'testnet',
 ) {
-  if(chunk.length === 0) return {}
+  if (chunk.length === 0) return {}
 
   const { data } = await axios
     .post(`${NETWORKS[network].hive}/graphql?`, {

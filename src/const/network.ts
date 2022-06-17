@@ -1,9 +1,9 @@
 interface NetworkInterface {
-  chainID: string,
-  LCD: string,
-  FCD: string,
-  api: string,
-  hive: string,
+  chainID: string
+  LCD: string
+  FCD: string
+  api: string
+  hive: string
 }
 
 const NETWORKS: Record<'mainnet' | 'testnet', NetworkInterface> = {

@@ -14,8 +14,7 @@ export default function ValidatorLink({ address }: { address: string }) {
   const [validator, setValidator] = useState<ValidatorInterface | undefined>()
 
   useEffect(() => {
-    if(network !== 'mainnet' && network !== 'testnet') return
-    
+    if (network !== 'mainnet' && network !== 'testnet') return
     ;(async () => {
       const { data } = await axios.get(
         `${NETWORKS[network].api}/validator/${address}`,

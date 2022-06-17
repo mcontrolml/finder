@@ -1,7 +1,7 @@
 .copy__button {
-    background-color: transparent;
-    color: var(--text);
-    border: 0;
-    cursor: pointer;
-    font-size: medium;
+  background-color: transparent;
+  color: var(--text);
+  border: 0;
+  cursor: pointer;
+  font-size: medium;
 }

@@ -5,17 +5,17 @@
 }
 
 :root {
-  --bg: #F7F7F7;
+  --bg: #f7f7f7;
   --bg2: white;
-  --text: #0D003F;
-  --main: #3100E0;
-  --main-op: #3100E020;
-  --gray: #8b83a7/*#75808A*/;
+  --text: #0d003f;
+  --main: #3100e0;
+  --main-op: #3100e020;
+  --gray: #8b83a7 /*#75808A*/;
 
-  --success: #5DD360;
-  --success-op: #5DD36020;
-  --error: #F97A6F;
-  --error-op: #F97A6F20;
+  --success: #5dd360;
+  --success-op: #5dd36020;
+  --error: #f97a6f;
+  --error-op: #f97a6f20;
 }
 
 body {
@@ -70,7 +70,6 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-button {
   display: none;
 }
-
 
 @media only screen and (max-width: 659px) {
   body {

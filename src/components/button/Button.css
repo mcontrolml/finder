@@ -1,27 +1,27 @@
 .button {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--bg2);
-    border: 0;
-    background-color: var(--main);
-    padding: .3rem .8rem;
-    border-radius: .4rem;
-    font-size: 11pt;
-    font-weight: 600;
-    transition: .3s;
-    margin-bottom: .4rem;
-    margin-right: .6rem;
-    display: block;
-    text-decoration: none;
-    width: fit-content;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--bg2);
+  border: 0;
+  background-color: var(--main);
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.4rem;
+  font-size: 11pt;
+  font-weight: 600;
+  transition: 0.3s;
+  margin-bottom: 0.4rem;
+  margin-right: 0.6rem;
+  display: block;
+  text-decoration: none;
+  width: fit-content;
 }
 
 .button:hover {
-    background-color: #110042;
+  background-color: #110042;
 }
 
 .button i {
-    padding-right: .5rem;
+  padding-right: 0.5rem;
 }

@@ -41,9 +41,7 @@ export function Header() {
           <Link
             to='/network/country'
             className={
-              pathname.startsWith('/network')
-                ? 'link link__active'
-                : 'link'
+              pathname.startsWith('/network') ? 'link link__active' : 'link'
             }
           >
             <i className='bx bx-globe' /> Network
@@ -67,8 +65,12 @@ export function Header() {
         </nav>
       </div>
 
-      <a href='https://github.com/mcontrolml/finder' target='blank' className='email'>
-      <i className='bx bxl-github'></i> Contribute on GitHub!
+      <a
+        href='https://github.com/mcontrolml/finder'
+        target='blank'
+        className='email'
+      >
+        <i className='bx bxl-github'></i> Contribute on GitHub!
       </a>
     </header>
   )

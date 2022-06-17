@@ -36,7 +36,7 @@ export default function TopToggle() {
     ) {
       navigate('/mainnet')
     }
-  // eslint-disable-next-line 
+    // eslint-disable-next-line
   }, [result])
 
   useEffect(() => {

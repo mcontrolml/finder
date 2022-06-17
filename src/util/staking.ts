@@ -4,11 +4,15 @@ import NETWORKS from '../const/network'
 export async function getStakingInfo() {
   const [totalResult, bondedResult] = await Promise.all([
     (async () => {
-      const { data } = await axios.get(`${NETWORKS.mainnet.LCD}/cosmos/bank/v1beta1/supply/uluna`)
+      const { data } = await axios.get(
+        `${NETWORKS.mainnet.LCD}/cosmos/bank/v1beta1/supply/uluna`,
+      )
       return data
     })(),
     (async () => {
-      const { data } = await axios.get(`${NETWORKS.mainnet.LCD}/cosmos/staking/v1beta1/pool`)
+      const { data } = await axios.get(
+        `${NETWORKS.mainnet.LCD}/cosmos/staking/v1beta1/pool`,
+      )
       return data
     })(),
   ])

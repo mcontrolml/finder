@@ -5,7 +5,7 @@ export default function nodesByCountry(list, limit = 0) {
   const result = []
 
   ;(list || []).forEach((node) => {
-    if(node.country_code) {
+    if (node.country_code) {
       topCountry[node.country_code] ||= 0
       topCountry[node.country_code]++
     }

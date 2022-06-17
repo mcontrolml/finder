@@ -88,8 +88,10 @@ export default function Validator() {
       </div>
 
       <div className='content__box'>
-        <div className='flex__space'><h3>Validators</h3> <h5>Status</h5></div>
-        <div className='warning' style={{ marginTop: 0}}>
+        <div className='flex__space'>
+          <h3>Validators</h3> <h5>Status</h5>
+        </div>
+        <div className='warning' style={{ marginTop: 0 }}>
           <h4>
             <i className='bx bxs-info-circle'></i> Info
           </h4>
@@ -102,7 +104,10 @@ export default function Validator() {
             {validators.map((validator) => {
               const moniker = validator.description.moniker
               return (
-                <div className='validator flex__space' key={validator.operator_address}>
+                <div
+                  className='validator flex__space'
+                  key={validator.operator_address}
+                >
                   <Link
                     to={`/mainnet/validator/${validator.operator_address}`}
                     className='validator__name'
@@ -114,9 +119,17 @@ export default function Validator() {
                       }
                       alt={moniker}
                     />
-                    <h5>{moniker.length > 16 ? `${moniker.substring(0, 14)}...` : moniker}</h5>
+                    <h5>
+                      {moniker.length > 16
+                        ? `${moniker.substring(0, 14)}...`
+                        : moniker}
+                    </h5>
                   </Link>
-                  {validator.jailed ? <p className='validator__jailed'>Jailed</p> : <p className='validator__active'>Active</p>}
+                  {validator.jailed ? (
+                    <p className='validator__jailed'>Jailed</p>
+                  ) : (
+                    <p className='validator__active'>Active</p>
+                  )}
                 </div>
               )
             })}

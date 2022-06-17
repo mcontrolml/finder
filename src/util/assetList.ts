@@ -12,11 +12,15 @@ export async function getAssetList(
 ): Promise<Record<string, AssetInteface>> {
   const [cw20, ibc] = await Promise.all([
     (async () => {
-      const { data } = await axios.get('https://assets.terra.money/cw20/tokens.json')
+      const { data } = await axios.get(
+        'https://assets.terra.money/cw20/tokens.json',
+      )
       return data[network]
     })(),
     (async () => {
-      const { data } = await axios.get('https://assets.terra.money/ibc/tokens.json')
+      const { data } = await axios.get(
+        'https://assets.terra.money/ibc/tokens.json',
+      )
       return data[network]
     })(),
   ])

@@ -1,63 +1,63 @@
 .staking__apy h1 {
-    text-align: center;
-    color: var(--main);
-    font-weight: 900;
-    font-size: 38pt;
-    line-height: 38pt;
-    margin: 0;
-    margin-top: 2.4rem;
+  text-align: center;
+  color: var(--main);
+  font-weight: 900;
+  font-size: 38pt;
+  line-height: 38pt;
+  margin: 0;
+  margin-top: 2.4rem;
 }
 
 .staking__apy p {
-    text-align: center;
-    font-weight: 600;
-    margin: 0;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
 }
 
 .staking__apy h2 {
-    text-align: center;
-    font-weight: 800;
-    font-size: 24pt;
-    line-height: 24pt;
-    margin: 0;
+  text-align: center;
+  font-weight: 800;
+  font-size: 24pt;
+  line-height: 24pt;
+  margin: 0;
 }
 
 .staking__apy img {
-    width: 26px;
-    padding-left: .6rem;
-    padding-right: .3rem;
+  width: 26px;
+  padding-left: 0.6rem;
+  padding-right: 0.3rem;
 }
 
 .staking__supply {
-    margin: 1.4rem 0;
+  margin: 1.4rem 0;
 }
 
 .validator__name img {
-    width: 30px;
-    background-color: var(--bg2);
-    border-radius: 50%;
-    margin-right: .6rem;
+  width: 30px;
+  background-color: var(--bg2);
+  border-radius: 50%;
+  margin-right: 0.6rem;
 }
 
 .validator__name {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .validator__jailed {
-    color: var(--error);
-    background-color: var(--error-op);
-    padding: .2rem 1rem;
-    border-radius: .8rem;
-    font-size: small;
-    font-weight: 600;
+  color: var(--error);
+  background-color: var(--error-op);
+  padding: 0.2rem 1rem;
+  border-radius: 0.8rem;
+  font-size: small;
+  font-weight: 600;
 }
 
 .validator__active {
-    color: var(--success);
-    background-color: var(--success-op);
-    padding: .2rem 1rem;
-    border-radius: .8rem;
-    font-size: small;
-    font-weight: 600;
+  color: var(--success);
+  background-color: var(--success-op);
+  padding: 0.2rem 1rem;
+  border-radius: 0.8rem;
+  font-size: small;
+  font-weight: 600;
 }

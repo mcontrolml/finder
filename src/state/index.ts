@@ -11,12 +11,12 @@ const network = atom<'mainnet' | 'testnet'>({
   default: 'mainnet',
 })
 
-const assetList = atom<Record<string, AssetInteface>> ({
+const assetList = atom<Record<string, AssetInteface>>({
   key: 'assetList',
   default: {},
 })
 
-const contractList = atom<Record<string, { name: string; icon?: string }>> ({
+const contractList = atom<Record<string, { name: string; icon?: string }>>({
   key: 'contractList',
   default: {},
 })

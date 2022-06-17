@@ -60,7 +60,10 @@ export default function Validator() {
             <div className='flex__space'>
               <div className='validator__details__img'>
                 <img
-                  src={validator.picture || 'https://assets.mcontrol.ml/coins/TERRA.svg'}
+                  src={
+                    validator.picture ||
+                    'https://assets.mcontrol.ml/coins/TERRA.svg'
+                  }
                   alt={validator.description.moniker}
                 />
                 <div>
@@ -72,12 +75,21 @@ export default function Validator() {
                   )}
                 </div>
               </div>
-              {validator.jailed ? <p className='validator__jailed'>Jailed</p> : <p className='validator__active'>Active</p>}
-
+              {validator.jailed ? (
+                <p className='validator__jailed'>Jailed</p>
+              ) : (
+                <p className='validator__active'>Active</p>
+              )}
             </div>
             <p>{validator.description.details}</p>
             <h5>Voting power:</h5>
-            <p className='validator__staked'><FormattedCoin rounded amount={validator.delegator_shares.split('.')[0]} denom='uluna' /></p>
+            <p className='validator__staked'>
+              <FormattedCoin
+                rounded
+                amount={validator.delegator_shares.split('.')[0]}
+                denom='uluna'
+              />
+            </p>
             <h5>Self delegation address:</h5>
             <Link to={`/${network}/wallet/${selfDelegationAddr}`}>
               {selfDelegationAddr}

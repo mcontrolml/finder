@@ -1,9 +1,11 @@
 # MissionControl Finder
+
 [<img src="https://mcontrol.ml/banner.png" width="500px"></img>](https://finder.mcontrol.ml/)
 
 An open-source explorer built for Terra 2.0
 
 # How to contribute
+
 ## Add a CW20 or IBC token
 
 To add a token make a PR on the Terra asset list:
