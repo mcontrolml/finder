@@ -7,7 +7,7 @@ import STATE from '../../../../state'
 import NETWORKS from '../../../../const/network'
 
 import './ValidatorLink.css'
-import ValidatorInterface from '../../../../types/validator'
+import { ValidatorInterface } from '../../../../types/validator'
 
 export default function ValidatorLink({ address }: { address: string }) {
   const network = useRecoilValue(STATE.network)

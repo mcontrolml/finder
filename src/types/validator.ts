@@ -1,4 +1,27 @@
-export default interface ValidatorInterface {
+enum VoteOption {
+  yes = 'VOTE_OPTION_YES',
+  abstain = 'VOTE_OPTION_ABSTAIN',
+  noWithVeto = 'VOTE_OPTION_NO_WITH_VETO',
+  no = 'VOTE_OPTION_NO',
+}
+
+export const VOTES: Record<VoteOption, string> = {
+  [VoteOption.yes]: 'Yes',
+  [VoteOption.abstain]: 'Abstain',
+  [VoteOption.noWithVeto]: 'No with veto',
+  [VoteOption.no]: 'No',
+}
+
+interface VoteInterface {
+  proposal_id: string
+  options: {
+    option: VoteOption
+    weight: string
+  }[]
+  title: string
+}
+
+export interface ValidatorInterface {
   operator_address: string
   jailed: boolean
   status:
@@ -27,4 +50,5 @@ export default interface ValidatorInterface {
   created_at: string
   picture: string
   self: string
+  votes: VoteInterface[]
 }

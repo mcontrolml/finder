@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-import ValidatorInterface from '../../types/validator'
+import { ValidatorInterface } from '../../types/validator'
 
 import { Loading } from '../../components/loading/Loading'
 

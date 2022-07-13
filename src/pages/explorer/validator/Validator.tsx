@@ -4,7 +4,7 @@ import { useParams, Navigate, Link } from 'react-router-dom'
 import axios from 'axios'
 
 import './Validator.css'
-import ValidatorInterface from '../../../types/validator'
+import { ValidatorInterface, VOTES } from '../../../types/validator'
 import { Loading } from '../../../components/loading/Loading'
 import Button from '../../../components/button/Button'
 import Search from '../../../components/search/Search'
@@ -164,11 +164,35 @@ export default function Validator() {
       </div>
 
       <div className='content__box'>
-        <h3>Uptime</h3>
+        <h3>Governance partecipation</h3>
+        <table className='validator__votes'>
+          <thead>
+            <td>ID</td>
+            <td>Title</td>
+            <td>Vote</td>
+          </thead>
+          <tbody>
+            {!isLoading &&
+              validator.votes.map((prop) => (
+                <tr key={prop.proposal_id}>
+                  <td>{prop.proposal_id}</td>
+                  <td className='validator__votes__link'>
+                    <a
+                      href={`https://station.terra.money/proposal/${prop.proposal_id}`}
+                      target='blank'
+                    >
+                      {prop.title.length > 30 ? `${prop.title.substring(0, 28)}...` : prop.title}
+                    </a>
+                  </td>
+                  <td>{VOTES[prop.options[0].option]}</td>
+                </tr>
+              ))}
+          </tbody>
+        </table>
       </div>
 
       <div className='content__box'>
-        <h3>Governance partecipation</h3>
+        <h3>Uptime</h3>
       </div>
 
       <div className='content__box'>
